@@ -150,6 +150,7 @@ Model artifacts loaded at runtime for inference
 ## Author
 
 **Ravi Aghara**
+
 📧 Email: aaghararavi@gmail.com
 
 🐙 GitHub: https://github.com/raviaghara007
