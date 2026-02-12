@@ -5,19 +5,21 @@ _Predicting loan approval decisions using Machine Learning to enable faster, unb
 ---
 
 ## 📌 Table of Contents
-- <a href="#overview">Overview</a>
-- <a href="#business-problem">Business Problem</a>
-- <a href="#dataset">Dataset</a>
-- <a href="#machine-learning-approach">Machine Learning Approach</a>
-- <a href="#tools--technologies">Tools & Technologies</a>
-- <a href="#project-structure">Project Structure</a>
-- <a href="#application-features">Application Features</a>
-- <a href="#deployment">Deployment</a>
-- <a href="#author">Author</a>
+- [Overview](#overview)
+- [Live Application](#live-application)
+- [Application Preview](#application-preview)
+- [Business Problem](#business-problem)
+- [Dataset](#dataset)
+- [Machine Learning Approach](#machine-learning-approach)
+- [Tools & Technologies](#tools--technologies)
+- [Project Structure](#project-structure)
+- [Application Features](#application-features)
+- [Deployment](#deployment)
+- [Author](#author)
 
 ---
 
-<h2><a class="anchor" id="overview"></a>Overview</h2>
+## Overview
 
 This project implements an end-to-end **Machine Learning Loan Approval System** that predicts whether a loan application should be approved or rejected based on applicant financial and demographic information.
 
@@ -25,7 +27,20 @@ The system integrates a trained classification model with a **Streamlit-based we
 
 ---
 
-<h2><a class="anchor" id="business-problem"></a>Business Problem</h2>
+## 🚀 Live Application
+
+🔗 **Live Demo:**  
+https://creditwise-loan-approval-htjfef6ccughuoyswbe7gu.streamlit.app/
+
+---
+
+## 🖼 Application Preview
+
+![CreditWise Loan Approval App](images/app_preview.png)
+
+---
+
+## Business Problem
 
 Traditional loan approval processes depend heavily on manual document verification and human judgment, which leads to:
 
@@ -38,11 +53,11 @@ The objective of this project is to automate the initial loan approval decision 
 
 ---
 
-<h2><a class="anchor" id="dataset"></a>Dataset</h2>
+## Dataset
 
 Each record in the dataset represents a loan applicant with attributes describing personal, financial, and credit information.
 
-**Key Features:**
+**Key Features**
 - Applicant Income  
 - Coapplicant Income  
 - Age  
@@ -54,16 +69,14 @@ Each record in the dataset represents a loan applicant with attributes describin
 - Property Area  
 - Gender  
 
-**Target Variable:**
+**Target Variable**
 - `Loan_Approved`  
   - `1` → Approved  
   - `0` → Rejected  
 
-The dataset is used for training and evaluating the machine learning model.
-
 ---
 
-<h2><a class="anchor" id="machine-learning-approach"></a>Machine Learning Approach</h2>
+## Machine Learning Approach
 
 - **Problem Type:** Binary Classification  
 - **Model Used:** Logistic Regression  
@@ -76,12 +89,12 @@ Logistic Regression was selected due to its interpretability and effectiveness i
 
 ---
 
-<h2><a class="anchor" id="tools--technologies"></a>Tools & Technologies</h2>
+## Tools & Technologies
 
 - **Python** – Core programming language  
 - **Scikit-learn** – Model training and preprocessing  
-- **Pandas & NumPy** – Data manipulation and numerical analysis 
-- **Matplotlib & Seaborn** -Data Visualization
+- **Pandas & NumPy** – Data manipulation and numerical analysis  
+- **Matplotlib & Seaborn** – Data visualization  
 - **Streamlit** – Web application framework  
 - **Pickle** – Model serialization  
 - **Git & GitHub** – Version control and collaboration  
@@ -89,58 +102,56 @@ Logistic Regression was selected due to its interpretability and effectiveness i
 
 ---
 
-<h2><a class="anchor" id="project-structure"></a>Project Structure</h2>
+## Project Structure
 
-'''
+```text
 creditwise-loan-approval/
 │
-├── app.py # Streamlit web application
-├── train_model.py # Model training script
-├── requirements.txt # Python dependencies
-├── README.md # Project documentation
+├── app.py                  # Streamlit web application
+├── train_model.py          # Model training script
+├── requirements.txt        # Python dependencies
+├── README.md               # Project documentation
 │
 ├── model/
-│ ├── loan_model.pkl
-│ ├── scaler.pkl
-│ └── features.pkl
+│   ├── loan_model.pkl      # Trained ML model
+│   ├── scaler.pkl          # Feature scaler
+│   └── features.pkl        # Feature names used during training
 │
 ├── data/
-│ └── loan_approval_data.csv
+│   └── loan_approval_data.csv
 │
 └── .streamlit/
-└── config.toml # Dark theme configuration
-'''
+    └── config.toml         # Dark theme configuration
+```
 
+---
+
+## Application Features
+
+- Real-time loan approval prediction
+- Probability-based output for decision confidence
+- Clean, dark-themed professional UI
+- Cloud-hosted and publicly accessible application
 
 ---
 
-<h2><a class="anchor" id="application-features"></a>Application Features</h2>
-
-- Real-time loan approval prediction  
-- Probability-based decision output  
-- Dark-themed professional UI  
-- User-friendly input controls  
-- Deployed and publicly accessible web application  
-
----
-<h2><a class="anchor" id="deployment"></a>Deployment</h2>
+## Deployment
 
 The application is deployed using Streamlit Cloud, enabling public access to the machine learning model through a web interface.
 
-Repository is connected directly to Streamlit Cloud
+Repository connected directly to Streamlit Cloud
 
-app.py is configured as the main entry point
+app.py configured as the main entry point
 
-Model artifacts are loaded at runtime for inference
+Model artifacts loaded at runtime for inference
 
-🔗 Live Application:
-https://creditwise-loan-approval-htjfef6ccughuoyswbe7gu.streamlit.app/
+---
 
+## Author
 
-<h2><a class="anchor" id="author"></a>Author</h2>
+**Ravi Aghara**
+📧 Email: aaghararavi@gmail.com
 
-Ravi Aghara
-Email:aaghararavi@gmail.com
-GitHub: https://github.com/raviaghara007
-Linkedin:https://www.linkedin.com/in/raviaghara07/
+🐙 GitHub: https://github.com/raviaghara007
 
+🔗 LinkedIn: https://www.linkedin.com/in/raviaghara07/
