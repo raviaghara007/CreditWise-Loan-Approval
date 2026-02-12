@@ -1,7 +1,6 @@
-python
+streamlit>=1.30.0
 pandas
 numpy
-streamlit
-matplotlib
-seaborn
 scikit-learn
+altair<5
+
