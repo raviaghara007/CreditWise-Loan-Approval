@@ -6,6 +6,8 @@ _Predicting loan approval decisions using Machine Learning to enable faster, unb
 
 ## 📌 Table of Contents
 - <a href="#overview">Overview</a>
+- <a href="#Live Application">Live Application</a>
+- <a href="#Application Preview">Application preview</a>
 - <a href="#business-problem">Business Problem</a>
 - <a href="#dataset">Dataset</a>
 - <a href="#machine-learning-approach">Machine Learning Approach</a>
@@ -22,6 +24,25 @@ _Predicting loan approval decisions using Machine Learning to enable faster, unb
 This project implements an end-to-end **Machine Learning Loan Approval System** that predicts whether a loan application should be approved or rejected based on applicant financial and demographic information.
 
 The system integrates a trained classification model with a **Streamlit-based web application**, allowing real-time predictions through a clean and professional user interface.
+
+---
+
+<h2><a class="anchor" id="Live Application"></a></h2>
+
+## 🚀 Live Application
+
+🔗 https://creditwise-loan-approval-htjfef6ccughuoyswbe7gu.streamlit.app/
+
+---
+
+
+<h2><a class="anchor" id="Application preview"></a></h2>
+
+## 🖼 Application Preview
+
+
+![CreditWise Loan Approval App](images/app_preview.png)
+
 
 ---
 
@@ -91,25 +112,24 @@ Logistic Regression was selected due to its interpretability and effectiveness i
 
 <h2><a class="anchor" id="project-structure"></a>Project Structure</h2>
 
-'''
 creditwise-loan-approval/
 │
-├── app.py # Streamlit web application
-├── train_model.py # Model training script
-├── requirements.txt # Python dependencies
-├── README.md # Project documentation
+├── app.py                  # Streamlit web application
+├── train_model.py          # Model training script
+├── requirements.txt        # Python dependencies
+├── README.md               # Project documentation
 │
 ├── model/
-│ ├── loan_model.pkl
-│ ├── scaler.pkl
-│ └── features.pkl
+│   ├── loan_model.pkl      # Trained ML model
+│   ├── scaler.pkl          # Feature scaler
+│   └── features.pkl        # Feature names used during training
 │
 ├── data/
-│ └── loan_approval_data.csv
+│   └── loan_approval_data.csv
 │
 └── .streamlit/
-└── config.toml # Dark theme configuration
-'''
+    └── config.toml         # Dark theme configuration
+
 
 
 ---
@@ -139,8 +159,10 @@ https://creditwise-loan-approval-htjfef6ccughuoyswbe7gu.streamlit.app/
 
 <h2><a class="anchor" id="author"></a>Author</h2>
 
-Ravi Aghara
-Email:aaghararavi@gmail.com
-GitHub: https://github.com/raviaghara007
-Linkedin:https://www.linkedin.com/in/raviaghara07/
+## Author
+
+**Ravi Aghara** 
+📧 Email: [aaghararavi@gmail.com](mailto:aaghararavi@gmail.com)  
+🐙 GitHub: https://github.com/raviaghara007  
+🔗 LinkedIn: https://www.linkedin.com/in/raviaghara07/
 
